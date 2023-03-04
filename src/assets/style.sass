@@ -1,5 +1,9 @@
+$primary-color: red
+$second-color: black
+$third-color: white
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
-*
+
+*    
     margin: 0
     padding: 0
     font-family: 'Open Sans', sans-serif
@@ -10,7 +14,7 @@ body
 
 nav
     .coisas-da-loja
-        background-color: black
+        background-color: $second-color
         width: 100%
         ul
             display: flex
@@ -19,7 +23,7 @@ nav
             align-items: center
             justify-content: space-evenly
             a
-                color: white
+                color: $third-color
                 font-weight: 800
                 text-decoration: none
     .nav-principal
@@ -27,9 +31,9 @@ nav
         justify-content: space-around
         align-items: center
         height: 13vh
-        border-bottom: 2px solid red
+        border-bottom: 2px solid $primary-color
         .logo
-            color: red
+            color: $primary-color
             font-size: 2em
             h1
                 font-weight: 900
@@ -39,9 +43,9 @@ nav
                 width: 420px
                 border-top-left-radius: 15px
                 border-bottom-left-radius: 15px
-                border-color: black
+                border-color: $second-color
             .lupa
-                background-color: red
+                background-color: $primary-color
                 width: 45px
                 height: 45px
                 display: flex
