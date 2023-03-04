@@ -1,9 +1,15 @@
 $primary-color: red
 $second-color: black
 $third-color: white
+$transparente: #00000000
+$laptop: 1024px
+$tablet: 768px
+$mobile-L: 425px
+$mobile-M: 375px
+$mobile-S: 320px
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
 
-*    
+*
     margin: 0
     padding: 0
     font-family: 'Open Sans', sans-serif
@@ -16,16 +22,17 @@ nav
     .coisas-da-loja
         background-color: $second-color
         width: 100%
-        ul
-            display: flex
-            list-style: none
-            height: 5vh
-            align-items: center
-            justify-content: space-evenly
-            a
-                color: $third-color
-                font-weight: 800
-                text-decoration: none
+    ul
+        display: flex
+        list-style: none
+        height: 5vh
+        align-items: center
+        justify-content: space-evenly
+        a
+            color: $third-color
+            font-weight: 800
+            font-size: 1.1em
+            text-decoration: none
     .nav-principal
         display: flex
         justify-content: space-around
@@ -63,3 +70,47 @@ nav
                     margin-right: 10px
                     width: 50px
                     border-radius: 15px
+    .navegacao
+        background-color: $primary-color
+        height: 7vh
+        display: flex
+        justify-content: space-around
+        align-items: center
+        ul
+            li
+                margin: 0 30px
+.dropdown
+    position: relative
+    display: inline-block
+
+    &-content
+        display: none
+        position: absolute
+        background-color: #f9f9f9
+        min-width: 160px
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+        z-index: 1
+
+    &-content a
+        color: black
+        padding: 12px 16px
+        text-decoration: none
+        display: block
+
+    &-content a:hover
+        background-color: $third-color
+
+    &:hover &-content
+        display: block
+
+    .dropbtn
+        background-color: $transparente
+        color: white
+        border: none
+        color: $third-color
+        font-weight: 800
+        font-size: 1.1em
+        text-decoration: none
+        cursor: pointer
+
+@media (max-width: $laptop)
