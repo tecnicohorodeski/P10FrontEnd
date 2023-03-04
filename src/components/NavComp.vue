@@ -42,13 +42,13 @@ export default {}
       </div>
       <ul>
         <li>
-          <a href="">DESCONTOS</a>
+          <a href="#">DESCONTOS</a>
         </li>
         <li>
-          <a href="">MERCADO</a>
+          <a href="#">MERCADO</a>
         </li>
         <li>
-          <a href="">LIVRARIA</a>
+          <a href="#">LIVRARIA</a>
         </li>
       </ul>
     </div>
