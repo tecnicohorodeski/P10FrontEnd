@@ -12,42 +12,55 @@ export default {}
       </ul>
     </div>
     <div class="nav-principal">
-      <div class="logo">
-        <h1>P10</h1>
+      <div class="nav-principal" id="nav-resp">
+        <div class="logo">
+          <h1>P10</h1>
+        </div>
+        <div class="pesquisa">
+          <input type="text" />
+          <div class="lupa">
+            <box-icon name="search-alt"></box-icon>
+          </div>
+        </div>
+        <div class="user-carrinho">
+          <div>
+            <box-icon size="lg" name="cart-alt"></box-icon>
+          </div>
+          <div class="user">
+            <img src="@/assets/img/eduardo.jpeg" alt="" />
+            <h3>edudasilva</h3>
+          </div>
+        </div>
       </div>
-      <div class="pesquisa">
+      <div class="pesquisa" id="pesquisa-resp">
         <input type="text" />
         <div class="lupa">
           <box-icon name="search-alt"></box-icon>
         </div>
       </div>
-      <div class="user-carrinho">
-        <div>
-          <box-icon size="lg" name="cart-alt"></box-icon>
-        </div>
-        <div class="user">
-          <img src="@/assets/img/eduardo.jpeg" alt="" />
-          <h3>edudasilva</h3>
-        </div>
-      </div>
     </div>
     <div class="navegacao">
       <div class="dropdown">
-        <button class="dropbtn">TODAS AS CATEGORIAS</button>
+        <button class="dropbtn">
+          TODAS AS CATEGORIAS
+          <box-icon name="down-arrow" size="xs" type="solid" color="#ffffff"></box-icon>
+        </button>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Papalaria</a>
+          <a href="#">Brinquedos</a>
+          <a href="#">Limpeza</a>
+          <a href="#">Casa</a>
+          <a href="#">Roupas</a>
         </div>
       </div>
       <ul>
-        <li>
+        <li class="navegacao-links">
           <a href="#">DESCONTOS</a>
-        </li>
-        <li>
+        </li> 
+        <li class="navegacao-links">
           <a href="#">MERCADO</a>
         </li>
-        <li>
+        <li class="navegacao-links">
           <a href="#">LIVRARIA</a>
         </li>
       </ul>

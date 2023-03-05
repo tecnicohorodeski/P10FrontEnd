@@ -1,7 +1,8 @@
 $primary-color: red
 $second-color: black
 $third-color: white
-$transparente: #00000000
+$hover-color: #e40101
+$transparente: #bb000000
 $laptop: 1024px
 $tablet: 768px
 $mobile-L: 425px
@@ -33,7 +34,7 @@ nav
             font-weight: 800
             font-size: 1.1em
             text-decoration: none
-    .nav-principal
+    .nav-principal, .nav-resp
         display: flex
         justify-content: space-around
         align-items: center
@@ -79,6 +80,10 @@ nav
         ul
             li
                 margin: 0 30px
+                a:hover
+                    background-color: $hover-color
+                    padding: 1vh
+
 .dropdown
     position: relative
     display: inline-block
@@ -114,3 +119,22 @@ nav
         cursor: pointer
 
 @media (max-width: $laptop)
+    nav
+        .nav-principal
+            .user-carrinho
+                .user
+                    h3
+                        display: none
+
+@media (max-width: $tablet)
+    nav
+        .nav-principal
+            flex-direction: column
+            #nav-resp
+                flex-direction: row
+            .pesquisa
+                display: none
+            #pesquisa-resp
+                display: flex
+                justify-content: center
+

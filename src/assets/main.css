@@ -22,25 +22,25 @@ nav ul {
     font-weight: 800;
     font-size: 1.1em;
     text-decoration: none; }
-nav .nav-principal {
+nav .nav-principal, nav .nav-resp {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 13vh;
   border-bottom: 2px solid red; }
-  nav .nav-principal .logo {
+  nav .nav-principal .logo, nav .nav-resp .logo {
     color: red;
     font-size: 2em; }
-    nav .nav-principal .logo h1 {
+    nav .nav-principal .logo h1, nav .nav-resp .logo h1 {
       font-weight: 900; }
-  nav .nav-principal .pesquisa {
+  nav .nav-principal .pesquisa, nav .nav-resp .pesquisa {
     display: flex; }
-    nav .nav-principal .pesquisa input {
+    nav .nav-principal .pesquisa input, nav .nav-resp .pesquisa input {
       width: 420px;
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
       border-color: black; }
-    nav .nav-principal .pesquisa .lupa {
+    nav .nav-principal .pesquisa .lupa, nav .nav-resp .pesquisa .lupa {
       background-color: red;
       width: 45px;
       height: 45px;
@@ -49,13 +49,13 @@ nav .nav-principal {
       justify-content: center;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px; }
-  nav .nav-principal .user-carrinho {
+  nav .nav-principal .user-carrinho, nav .nav-resp .user-carrinho {
     display: flex; }
-    nav .nav-principal .user-carrinho .user {
+    nav .nav-principal .user-carrinho .user, nav .nav-resp .user-carrinho .user {
       display: flex;
       align-items: center;
       margin-left: 5px; }
-      nav .nav-principal .user-carrinho .user img {
+      nav .nav-principal .user-carrinho .user img, nav .nav-resp .user-carrinho .user img {
         margin-right: 10px;
         width: 50px;
         border-radius: 15px; }
@@ -67,6 +67,9 @@ nav .navegacao {
   align-items: center; }
   nav .navegacao ul li {
     margin: 0 30px; }
+    nav .navegacao ul li a:hover {
+      background-color: #e40101;
+      padding: 1vh; }
 
 .dropdown {
   position: relative;
@@ -88,7 +91,7 @@ nav .navegacao {
   .dropdown:hover .dropdown-content {
     display: block; }
   .dropdown .dropbtn {
-    background-color: #00000000;
+    background-color: #bb000000;
     color: white;
     border: none;
     color: white;
@@ -96,5 +99,19 @@ nav .navegacao {
     font-size: 1.1em;
     text-decoration: none;
     cursor: pointer; }
+
+@media (max-width: 1024px) {
+  nav .nav-principal .user-carrinho .user h3 {
+    display: none; } }
+@media (max-width: 768px) {
+  nav .nav-principal {
+    flex-direction: column; }
+    nav .nav-principal #nav-resp {
+      flex-direction: row; }
+    nav .nav-principal .pesquisa {
+      display: none; }
+    nav .nav-principal #pesquisa-resp {
+      display: flex;
+      justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */
