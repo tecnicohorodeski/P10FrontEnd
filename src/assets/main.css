@@ -22,25 +22,25 @@ nav ul {
     font-weight: 800;
     font-size: 1.1em;
     text-decoration: none; }
-nav .nav-principal, nav .nav-resp {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 13vh;
-  border-bottom: 2px solid red; }
-  nav .nav-principal .logo, nav .nav-resp .logo {
+nav .nav-principal {
+  height: 11vh; }
+  nav .nav-principal .nav-principal-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  nav .nav-principal .logo {
     color: red;
     font-size: 2em; }
-    nav .nav-principal .logo h1, nav .nav-resp .logo h1 {
+    nav .nav-principal .logo h1 {
       font-weight: 900; }
-  nav .nav-principal .pesquisa, nav .nav-resp .pesquisa {
+  nav .nav-principal .pesquisa {
     display: flex; }
-    nav .nav-principal .pesquisa input, nav .nav-resp .pesquisa input {
+    nav .nav-principal .pesquisa input {
       width: 420px;
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
       border-color: black; }
-    nav .nav-principal .pesquisa .lupa, nav .nav-resp .pesquisa .lupa {
+    nav .nav-principal .pesquisa .lupa {
       background-color: red;
       width: 45px;
       height: 45px;
@@ -49,13 +49,13 @@ nav .nav-principal, nav .nav-resp {
       justify-content: center;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px; }
-  nav .nav-principal .user-carrinho, nav .nav-resp .user-carrinho {
+  nav .nav-principal .user-carrinho {
     display: flex; }
-    nav .nav-principal .user-carrinho .user, nav .nav-resp .user-carrinho .user {
+    nav .nav-principal .user-carrinho .user {
       display: flex;
       align-items: center;
       margin-left: 5px; }
-      nav .nav-principal .user-carrinho .user img, nav .nav-resp .user-carrinho .user img {
+      nav .nav-principal .user-carrinho .user img {
         margin-right: 10px;
         width: 50px;
         border-radius: 15px; }
@@ -71,13 +71,50 @@ nav .navegacao {
       background-color: #e40101;
       padding: 1vh; }
 
+.dropdown-responsivo {
+  display: none;
+  position: relative; }
+  .dropdown-responsivo-content {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    margin-top: 33px;
+    background-color: #f9f9f9;
+    width: 392px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .dropdown-responsivo-content a {
+    color: black;
+    padding: 12px 1px;
+    text-decoration: none;
+    display: block; }
+  .dropdown-responsivo-esquerda, .dropdown-responsivo-meio, .dropdown-responsivo-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .dropdown-responsivo-meio {
+    padding: 0 33px; }
+  .dropdown-responsivo-content a:hover {
+    background-color: white; }
+  .dropdown-responsivo:hover .dropdown-responsivo-content {
+    display: flex; }
+  .dropdown-responsivo .dropbtn {
+    background-color: #bb000000;
+    color: white;
+    border: none;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1em;
+    text-decoration: none;
+    cursor: pointer; }
+
 .dropdown {
   position: relative;
   display: inline-block; }
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1; }
@@ -104,14 +141,39 @@ nav .navegacao {
   nav .nav-principal .user-carrinho .user h3 {
     display: none; } }
 @media (max-width: 768px) {
-  nav .nav-principal {
-    flex-direction: column; }
-    nav .nav-principal #nav-resp {
-      flex-direction: row; }
-    nav .nav-principal .pesquisa {
+  nav {
+    border-top: 10px solid black; }
+    nav ul {
       display: none; }
-    nav .nav-principal #pesquisa-resp {
+    nav .nav-principal {
       display: flex;
-      justify-content: center; } }
+      flex-direction: column;
+      align-items: center;
+      padding: 0 30px; }
+      nav .nav-principal .user-carrinho .user h3 {
+        display: block; }
+      nav .nav-principal .nav-principal-div {
+        width: 100%;
+        justify-content: space-between; }
+      nav .nav-principal .pesquisa {
+        display: none; }
+
+  .navegacao .dropdown {
+    display: none; }
+  .navegacao .dropdown-responsivo {
+    display: inline-flex;
+    justify-content: center; }
+  .navegacao .dropdown-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column; } }
+@media (max-width: 425px) {
+  nav .navegacao .dropdown-responsivo-meio, nav .navegacao .dropdown-responsivo-direita {
+    padding: 0 0;
+    margin-top: 20px; }
+  nav .navegacao .dropdown-responsivo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; } }
 
 /*# sourceMappingURL=main.css.map */

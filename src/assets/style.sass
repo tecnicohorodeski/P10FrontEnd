@@ -34,17 +34,18 @@ nav
             font-weight: 800
             font-size: 1.1em
             text-decoration: none
-    .nav-principal, .nav-resp
-        display: flex
-        justify-content: space-around
-        align-items: center
-        height: 13vh
-        border-bottom: 2px solid $primary-color
+    .nav-principal
+        height: 11vh
+        .nav-principal-div
+            display: flex
+            align-items: center
+            justify-content: space-around
         .logo
             color: $primary-color
             font-size: 2em
             h1
                 font-weight: 900
+
         .pesquisa
             display: flex
             input
@@ -84,6 +85,47 @@ nav
                     background-color: $hover-color
                     padding: 1vh
 
+.dropdown-responsivo
+    display: none
+    position: relative
+
+    &-content
+        display: none
+        position: absolute
+        padding: 20px
+        margin-top: 33px
+        background-color: #f9f9f9
+        width: 392px
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+        z-index: 1
+
+    &-content a
+        color: black
+        padding: 12px 1px
+        text-decoration: none
+        display: block
+    &-esquerda, &-meio, &-direita
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &-meio
+        padding: 0 33px
+    &-content a:hover
+        background-color: $third-color
+
+    &:hover &-content
+        display: flex
+
+    .dropbtn
+        background-color: $transparente
+        color: white
+        border: none
+        color: $third-color
+        font-weight: 800
+        font-size: 1.1em
+        text-decoration: none
+        cursor: pointer
+
 .dropdown
     position: relative
     display: inline-block
@@ -91,7 +133,7 @@ nav
     &-content
         display: none
         position: absolute
-        background-color: #f9f9f9
+        background-color: $third-color
         min-width: 160px
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
         z-index: 1
@@ -128,13 +170,44 @@ nav
 
 @media (max-width: $tablet)
     nav
+        border-top: 10px solid $second-color
+        ul
+            display: none
+
         .nav-principal
+            display: flex
             flex-direction: column
-            #nav-resp
-                flex-direction: row
+            align-items: center
+            padding: 0 30px
+            .user-carrinho
+                .user
+                    h3
+                        display: block
+            .nav-principal-div
+                width: 100%
+                justify-content: space-between
             .pesquisa
                 display: none
-            #pesquisa-resp
-                display: flex
-                justify-content: center
+    .navegacao
+        .dropdown
+            display: none
+        .dropdown-responsivo
+            display: inline-flex
+            justify-content: center
+        .dropdown-content
+            position: absolute
+            display: flex
+            flex-direction: column
 
+@media (max-width: $mobile-L)
+    nav
+        .navegacao
+            .dropdown-responsivo
+                &-meio, &-direita
+                    padding: 0 0
+                    margin-top: 20px
+                
+                &-content
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
