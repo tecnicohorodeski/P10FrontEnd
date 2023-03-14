@@ -12,24 +12,22 @@ export default {}
       </ul>
     </div>
     <div class="nav-principal">
-      <div class="nav-principal-div">
-        <div class="logo">
-          <h1>P10</h1>
+      <div class="logo">
+        <h1>P10</h1>
+      </div>
+      <div class="pesquisa">
+        <input type="text" />
+        <div class="lupa">
+          <box-icon name="search-alt"></box-icon>
         </div>
-        <div class="pesquisa">
-          <input type="text" />
-          <div class="lupa">
-            <box-icon name="search-alt"></box-icon>
-          </div>
+      </div>
+      <div class="user-carrinho">
+        <div>
+          <box-icon size="lg" name="cart-alt"></box-icon>
         </div>
-        <div class="user-carrinho">
-          <div>
-            <box-icon size="lg" name="cart-alt"></box-icon>
-          </div>
-          <div class="user">
-            <img src="@/assets/img/eduardo.jpeg" alt="" />
-            <h3>edudasilva</h3>
-          </div>
+        <div class="user">
+          <img src="@/assets/img/eduardo.jpeg" alt="" />
+          <h3>edudasilva</h3>
         </div>
       </div>
     </div>
