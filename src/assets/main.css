@@ -154,7 +154,7 @@ nav .navegacao ul li a:hover {
 .dropdown-content a:hover {
   background-color: white;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:focus-within .dropdown-content {
   display: block;
 }
 .dropdown .dropbtn {
