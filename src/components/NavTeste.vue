@@ -23,18 +23,35 @@ export default {}
       </div>
       <div class="user-carrinho">
         <div>
-          <box-icon size="lg" name="cart-alt"></box-icon>
+          <box-icon size="lg" class="cesta-responsiva-lg" name="basket"></box-icon>
+          <box-icon size="md" class="cesta-responsiva-md" name="basket"></box-icon>
         </div>
         <div class="user">
           <img src="@/assets/img/eduardo.jpeg" alt="" />
           <h3>edudasilva</h3>
         </div>
-      </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><h4>Em destaque</h4></li>
+          <li><a href="#">Descontos</a></li>
+          <li><a href="#">Mercado</a></li>
+          <li><a href="#">Livraria</a></li>
+          <li><h4>Todas as categorias</h4></li>
+          <li><a href="#">Papelaria</a></li>
+          <li><a href="#">Brinquedos</a></li>
+          <li><a href="#">Limpeza</a></li>
+          <li><a href="#">Casa</a></li>
+          <li><a href="#">Roupas</a></li>
+          <li class="perfil">
+              <img src="@/assets/img/eduardo.jpeg" alt="" />
+              <h4>edudasilva</h4>
 
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="navegacao">
       <div class="dropdown">

@@ -1,260 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-}
-
-nav .coisas-da-loja {
-  background-color: black;
-  width: 100%;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  height: 5vh;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-nav ul a {
-  color: white;
-  font-weight: 800;
-  font-size: 1.1em;
-  text-decoration: none;
-}
-
-nav .nav-principal {
-  height: 11vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav .nav-principal .logo {
-  color: red;
-  font-size: 2em;
-}
-
-nav .nav-principal .logo h1 {
-  font-weight: 900;
-}
-
-nav .nav-principal .pesquisa {
-  display: flex;
-}
-
-nav .nav-principal .pesquisa input {
-  width: 420px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-color: black;
-}
-
-nav .nav-principal .pesquisa .lupa {
-  background-color: red;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-nav .nav-principal .user-carrinho {
-  display: flex;
-}
-
-nav .nav-principal .user-carrinho .user {
-  display: flex;
-  align-items: center;
-  margin-left: 5px;
-}
-
-nav .nav-principal .user-carrinho .user img {
-  margin-right: 10px;
-  width: 50px;
-  border-radius: 15px;
-}
-
-nav .navegacao {
-  background-color: red;
-  height: 7vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav .navegacao ul li {
-  margin: 0 30px;
-}
-
-nav .navegacao ul li a:hover {
-  background-color: #e40101;
-  padding: 1vh;
-}
-
-.dropdown-responsivo {
-  display: none;
-  position: relative;
-}
-
-.dropdown-responsivo-content {
-  display: none;
-  position: absolute;
-  padding: 10px;
-  margin-top: 33px;
-  background-color: #f9f9f9;
-  width: 392px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-responsivo-content a {
-  color: black;
-  padding: 12px 1px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-responsivo-esquerda, .dropdown-responsivo-meio, .dropdown-responsivo-direita {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.dropdown-responsivo-meio {
-  padding: 0 33px;
-}
-
-.dropdown-responsivo-content a:hover {
-  background-color: white;
-}
-
-.dropdown-responsivo:hover .dropdown-responsivo-content {
-  display: flex;
-}
-
-.dropdown-responsivo .dropbtn {
-  background-color: #bb000000;
-  color: white;
-  border: none;
-  color: white;
-  font-weight: 800;
-  font-size: 1.1em;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  margin-top: 20px;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown .dropbtn {
-  background-color: #bb000000;
-  color: white;
-  border: none;
-  color: white;
-  font-weight: 800;
-  font-size: 1.1em;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@media (max-width: 1024px) {
-  nav .nav-principal .user-carrinho .user h3 {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  nav {
-    border-top: 10px solid black;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  nav .nav-principal {
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-  }
-  nav .nav-principal .pesquisa {
-    width: 50%;  
-  }
-  nav .nav-principal .pesquisa  input{
-    width: 100%;  
-  }
-
-  nav .nav-principal .nav-principal-div {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-
-
-  .navegacao .dropdown {
-    display: none;
-  }
-
-  .navegacao .dropdown-responsivo {
-    display: inline-flex;
-    justify-content: center;
-  }
-
-  .navegacao .dropdown-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 425px) {
-  nav .navegacao .dropdown-responsivo {
-    display: none;
-  }
-  nav .nav-principal .pesquisa {
-    display: none;  
-  }
-  
-}
- */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 * {
@@ -354,6 +97,7 @@ nav .nav-principal .pesquisa .lupa {
 
 nav .nav-principal .user-carrinho {
   display: flex;
+  align-items: center;
 }
 
 nav .nav-principal .user-carrinho .user {
@@ -396,13 +140,10 @@ nav ul li a {
   transition: all 0.3s ease;
 }
 
-nav ul li a.active,
-nav ul li a:hover {}
 
-
-nav .menu-btn i {
+nav .nav-principal .user-carrinho .menu-btn i {
   color: #000000;
-  font-size: 22px;
+  font-size: 2em;
   cursor: pointer;
   display: none;
 }
@@ -439,8 +180,7 @@ input[type="checkbox"] {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
-  margin-top: 20px;
+  background-color: white;;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -454,7 +194,7 @@ input[type="checkbox"] {
 }
 
 .dropdown-content a:hover {
-  background-color: white;
+  background-color: rgb(255, 222, 222);
 }
 
 .dropdown:hover .dropdown-content {
@@ -466,6 +206,7 @@ input[type="checkbox"] {
   color: white;
   border: none;
   color: white;
+  padding: 10px;
   font-weight: 700;
   font-size: 1.1em;
   text-decoration: none;
@@ -506,7 +247,7 @@ input[type="checkbox"] {
 }
 
 .dropdown-responsivo-content a:hover {
-  background-color: white;
+  background-color: rgb(255, 222, 222);
 }
 
 .dropdown-responsivo:hover .dropdown-responsivo-content {
@@ -519,9 +260,16 @@ input[type="checkbox"] {
   border: none;
   color: white;
   font-weight: 800;
+  padding: 5px;
   font-size: 1.1em;
   text-decoration: none;
   cursor: pointer;
+}
+nav .nav-principal .user-carrinho ul {
+  display: none;
+}
+.cesta-responsiva-md {
+  display: none;
 }
 
 
@@ -537,6 +285,7 @@ input[type="checkbox"] {
   nav .coisas-da-loja ul {
     height: 2vh;
   }
+
   nav .navegacao ul {
     display: none;
   }
@@ -558,28 +307,42 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 425px) {
-  nav .menu-btn i {
+  .cesta-responsiva-lg {
+    display: none;
+  }
+  .cesta-responsiva-md {
+    display: block;
+  }
+  nav .nav-principal .user-carrinho .menu-btn i {
     display: block;
   }
 
+  nav .navegacao .dropdown-responsivo {
+    display: none;
+  }
+  nav .nav-principal .user-carrinho .user {
+    display: none;
+  }
+  nav .nav-principal .pesquisa {
+    display: none;
+  }
 
   nav {
     justify-content: space-around;
     padding: 0;
   }
-  
-  #click:checked~.menu-btn i:before {
+
+  #click:checked~ .menu-btn i:before {
     content: "\f00d";
   }
 
-  nav ul {
+  nav .nav-principal .user-carrinho ul {
     z-index: 5;
     position: absolute;
     top: 80px;
     left: -100%;
-    background: rgb(15, 15, 15);
+    background: rgb(255, 255, 255);
     width: 100%;
-    border-radius: 0 0 20px 20px;
     text-align: center;
     display: block;
     transition: all 0.3s ease;
@@ -588,27 +351,46 @@ input[type="checkbox"] {
   #click:checked~ul {
     left: 0;
   }
+  nav .nav-principal .user-carrinho ul .perfil {
+    border: 2px solid red;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    background-color: wheat;
+    width: 86%;
+    border-radius: 20px;
+    align-items: center;
+  }
+  nav .nav-principal .user-carrinho ul .perfil img{
+    width: 20%;
+    border-radius: 15px;
+    margin-right: 10px;
 
-  nav ul li {
+  }
+  nav .nav-principal .user-carrinho ul li {
     width: 100%;
-    margin: 40px 0;
+    margin: 23px 0;
   }
 
-  nav ul li a {
+  nav .nav-principal .user-carrinho ul li a {
     width: 100%;
     margin-left: -100%;
     display: block;
     font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #000000;
+  }
+  nav .nav-principal .user-carrinho ul li h4 {
+    color: red;
+    font-size: 1.5em;
   }
 
   #click:checked~ul li a {
     margin-left: 0px;
   }
 
-  nav ul li a.active,
-  nav ul li a:hover {
+  nav .nav-principal .user-carrinho ul li a.active,
+  nav .nav-principal .user-carrinho ul li a:hover {
     background: none;
-    color: cyan;
+    color: red;
   }
 }
