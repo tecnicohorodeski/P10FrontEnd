@@ -11,31 +11,16 @@ body {
   height: 100vh;
 }
 
-/*nav*/
-nav .coisas-da-loja {
-  background-color: black;
-  width: 100%;
+.logo {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 17px;
 }
 
-nav .coisas-da-loja ul {
-  display: flex;
-  list-style: none;
-  height: 5vh;
-  align-items: center;
-  justify-content: space-evenly;
-}
 
-nav .coisas-da-loja ul a {
-  color: white;
-  font-weight: 800;
-  font-size: 1.1em;
-  text-decoration: none;
-}
+/*! início nav */
 
-nav .navegacao ul li a {
-  font-weight: 700;
-  font-size: 1.1em;
-}
 
 nav {
   display: flex;
@@ -46,13 +31,42 @@ nav {
   justify-content: center;
 }
 
-nav .navegacao {
-  background-color: #ff0000;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
+nav ul {
   display: flex;
-  height: 7vh;
+  list-style: none;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav .coisas-da-loja {
+  background-color: black;
+  width: 100%;
+}
+
+nav .coisas-da-loja ul {
+  height: 5vh;
+  justify-content: space-evenly;
+}
+
+nav .coisas-da-loja ul a {
+  color: white;
+  font-weight: 800;
+  font-size: 1.1em;
+  text-decoration: none;
 }
 
 nav .nav-principal {
@@ -63,10 +77,6 @@ nav .nav-principal {
   align-items: center;
 }
 
-nav .nav-principal .logo {
-  color: red;
-  font-size: 2em;
-}
 
 nav .nav-principal .logo h1 {
   font-weight: 900;
@@ -100,6 +110,10 @@ nav .nav-principal .user-carrinho {
   align-items: center;
 }
 
+nav .nav-principal .user-carrinho ul {
+  display: none;
+}
+
 nav .nav-principal .user-carrinho .user {
   display: flex;
   align-items: center;
@@ -112,35 +126,6 @@ nav .nav-principal .user-carrinho .user img {
   border-radius: 15px;
 }
 
-
-nav .logo {
-  color: #ff0000;
-  font-weight: bold;
-  line-height: 17px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-nav ul li {
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-
-
 nav .nav-principal .user-carrinho .menu-btn i {
   color: #000000;
   font-size: 2em;
@@ -148,28 +133,18 @@ nav .nav-principal .user-carrinho .menu-btn i {
   display: none;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: -1;
+nav .navegacao {
+  background-color: #ff0000;
   width: 100%;
-  padding: 0 30px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  height: 7vh;
 }
 
-.content div {
-  font-size: 40px;
+nav .navegacao ul li a {
   font-weight: 700;
-}
-
-#logo-responsiva {
-  display: none;
+  font-size: 1.1em;
 }
 
 .dropdown {
@@ -180,7 +155,8 @@ input[type="checkbox"] {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;;
+  background-color: white;
+  ;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -218,62 +194,42 @@ input[type="checkbox"] {
   position: relative;
 }
 
-.dropdown-responsivo-content {
+input[type="checkbox"] {
   display: none;
+}
+
+.content {
   position: absolute;
-  padding: 10px;
-  margin-top: 33px;
-  background-color: #f9f9f9;
-  width: 411px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
 }
 
-.dropdown-responsivo-content a {
-  color: black;
-  padding: 12px 1px;
-  text-decoration: none;
-  display: block;
+.content div {
+  font-size: 40px;
+  font-weight: 700;
 }
 
-.dropdown-responsivo-esquerda, .dropdown-responsivo-meio, .dropdown-responsivo-direita {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.dropdown-responsivo-meio {
-  padding: 0 33px;
-}
-
-.dropdown-responsivo-content a:hover {
-  background-color: rgb(255, 222, 222);
-}
-
-.dropdown-responsivo:hover .dropdown-responsivo-content {
-  display: flex;
-}
-
-.dropdown-responsivo .dropbtn {
-  background-color: #bb000000;
-  color: white;
-  border: none;
-  color: white;
-  font-weight: 800;
-  padding: 5px;
-  font-size: 1.1em;
-  text-decoration: none;
-  cursor: pointer;
-}
-nav .nav-principal .user-carrinho ul {
+#logo-responsiva {
   display: none;
 }
+
+
+
 .cesta-responsiva-md {
   display: none;
 }
 
+/*! final nav*/
+
 
 @media (max-width: 760px) {
+
+  /*! início nav */
   nav .nav-principal .user-carrinho .user h3 {
     display: none;
   }
@@ -290,29 +246,85 @@ nav .nav-principal .user-carrinho ul {
     display: none;
   }
 
-  .navegacao .dropdown {
+  nav .navegacao .dropdown {
     display: none;
   }
 
-  .navegacao .dropdown-responsivo {
+  nav .navegacao .dropdown-responsivo {
     display: inline-flex;
     justify-content: center;
   }
 
-  .navegacao .dropdown-content {
+  nav .navegacao .dropdown-content {
     position: absolute;
     display: flex;
     flex-direction: column;
   }
+
+  nav .navegacao .dropdown-responsivo-content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    margin-top: 33px;
+    background-color: #f9f9f9;
+    width: 411px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  nav .navegacao .dropdown-responsivo-content a {
+    color: black;
+    padding: 12px 1px;
+    text-decoration: none;
+    display: block;
+  }
+
+  nav .navegacao .dropdown-responsivo-esquerda,
+  .dropdown-responsivo-meio,
+  .dropdown-responsivo-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .navegacao .dropdown-responsivo-meio {
+    padding: 0 33px;
+  }
+
+  nav .navegacao .dropdown-responsivo-content a:hover {
+    background-color: rgb(255, 222, 222);
+  }
+
+  nav .navegacao .dropdown-responsivo:hover .dropdown-responsivo-content {
+    display: flex;
+  }
+
+  nav .navegacao .dropdown-responsivo .dropbtn {
+    background-color: #bb000000;
+    color: white;
+    border: none;
+    color: white;
+    font-weight: 800;
+    padding: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*! final nav*/
 }
 
 @media (max-width: 425px) {
+
+  /*! início nav */
   .cesta-responsiva-lg {
     display: none;
   }
+
   .cesta-responsiva-md {
     display: block;
   }
+
   nav .nav-principal .user-carrinho .menu-btn i {
     display: block;
   }
@@ -320,9 +332,11 @@ nav .nav-principal .user-carrinho ul {
   nav .navegacao .dropdown-responsivo {
     display: none;
   }
+
   nav .nav-principal .user-carrinho .user {
     display: none;
   }
+
   nav .nav-principal .pesquisa {
     display: none;
   }
@@ -332,7 +346,7 @@ nav .nav-principal .user-carrinho ul {
     padding: 0;
   }
 
-  #click:checked~ .menu-btn i:before {
+  #click:checked~.menu-btn i:before {
     content: "\f00d";
   }
 
@@ -351,22 +365,31 @@ nav .nav-principal .user-carrinho ul {
   #click:checked~ul {
     left: 0;
   }
+
   nav .nav-principal .user-carrinho ul .perfil {
-    border: 2px solid red;
+    border: 2px solid rgb(231, 231, 231);
     margin: 20px;
     padding: 10px;
     display: flex;
-    background-color: wheat;
+    background-color: rgb(236, 236, 236);
     width: 86%;
     border-radius: 20px;
     align-items: center;
   }
-  nav .nav-principal .user-carrinho ul .perfil img{
+
+  nav .nav-principal .user-carrinho ul .perfil-li {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+  }
+
+  nav .nav-principal .user-carrinho ul .perfil img {
     width: 20%;
     border-radius: 15px;
     margin-right: 10px;
 
   }
+
   nav .nav-principal .user-carrinho ul li {
     width: 100%;
     margin: 23px 0;
@@ -379,6 +402,7 @@ nav .nav-principal .user-carrinho ul {
     font-size: 20px;
     color: #000000;
   }
+
   nav .nav-principal .user-carrinho ul li h4 {
     color: red;
     font-size: 1.5em;
@@ -393,4 +417,6 @@ nav .nav-principal .user-carrinho ul {
     background: none;
     color: red;
   }
+
+  /*! final nav*/
 }

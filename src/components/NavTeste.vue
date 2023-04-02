@@ -45,9 +45,12 @@ export default {}
           <li><a href="#">Limpeza</a></li>
           <li><a href="#">Casa</a></li>
           <li><a href="#">Roupas</a></li>
-          <li class="perfil">
-              <img src="@/assets/img/eduardo.jpeg" alt="" />
-              <h4>edudasilva</h4>
+          <li class="perfil-li">
+            <div class="perfil">
+                <img src="@/assets/img/eduardo.jpeg" alt="" />
+                <h4>edudasilva</h4>
+
+            </div>
 
           </li>
         </ul>
