@@ -12,10 +12,7 @@ export default {}
       </ul>
     </div>
     <div class="nav-principal">
-      <div>
-        <box-icon size="lg" name='menu'></box-icon>
-      </div>
-      <div class="logo">
+      <div id="logo-responsiva-meio" class="logo">
         <h1>P10</h1>
       </div>
       <div class="pesquisa">
@@ -33,6 +30,11 @@ export default {}
           <h3>edudasilva</h3>
         </div>
       </div>
+
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
     </div>
     <div class="navegacao">
       <div class="dropdown">
@@ -78,15 +80,9 @@ export default {}
         </div>
       </div>
       <ul>
-        <li class="navegacao-links">
-          <a href="#">DESCONTOS</a>
-        </li>
-        <li class="navegacao-links">
-          <a href="#">MERCADO</a>
-        </li>
-        <li class="navegacao-links">
-          <a href="#">LIVRARIA</a>
-        </li>
+        <li><a href="#">DESCONTOS</a></li>
+        <li><a href="#">MERCADO</a></li>
+        <li><a href="#">LIVRARIA</a></li>
       </ul>
     </div>
   </nav>

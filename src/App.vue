@@ -1,10 +1,10 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import NavComp from './components/NavComp.vue'
+import NavTeste from './components/NavTeste.vue'
 </script>
 
 <template>
-  <NavComp />
+  <NavTeste />
   <RouterView />
 </template>
 
