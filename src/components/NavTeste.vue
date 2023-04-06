@@ -12,11 +12,13 @@ export default {}
       </ul>
     </div>
     <div class="nav-principal">
-      <div id="logo-responsiva-meio" class="logo">
-        <h1>P10</h1>
+      <div>
+        <router-link class="logo" to="/">
+          <h1>P10</h1>
+        </router-link>
       </div>
       <div class="pesquisa">
-        <input type="text" />
+        <input placeholder="O que você está procurando?" type="text" />
         <div class="lupa">
           <box-icon name="search-alt"></box-icon>
         </div>
