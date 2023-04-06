@@ -16,6 +16,8 @@ export default {
     </div>
     <ProdutosComp />
     <ProdutosComp />
-
+    <ProdutosComp />
+    <ProdutosComp />
+    <ProdutosComp />
   </main>
 </template>
