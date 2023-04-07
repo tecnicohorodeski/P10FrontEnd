@@ -42,10 +42,24 @@ main .alerta {
   display: flex;
   margin-top: 10px;
   align-items: center;
-  border-radius: 17px;
   justify-content: space-between;
 }
-
+main .produtos .produtos-alta {
+  display: flex;
+  align-items: center;
+}
+main .produtos .produtos-alta #card-maior {
+  width: 42%;
+  height: auto;
+}
+main .produtos .produtos-alta .lista-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .produtos .produtos-alta .lista-produtos .card-produto {
+  width: 150px;
+}
 main .alerta p {
   color: #fff;
   font-weight: 800;
@@ -67,9 +81,22 @@ main .divulgacao {
 main .divulgacao img {
   width: 100%;
 }
-
+main .produtos .promocao {
+  display: flex;
+  align-items: center;
+  border: 5px solid #f10000;
+}
+main .produtos .promocao img {
+  width: 50%;
+}
+main .produtos .promocao .produtos-promocao{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
 main .produtos div .card-produto {
-  min-width: 168px;
+  width: 168px;
   height: 34vh;
   display: flex;
   margin: 5px 6px;
