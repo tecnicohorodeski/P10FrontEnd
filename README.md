@@ -1,12 +1,12 @@
 # Projeto Integrador - P10 
 Projeto Integrador do Curso Técnico em Informática para Internet Integrado ao Ensino Médio do IFC - Campus Araquari.
 
-Professores: [Marco André Mendes](github.com/marcoandre) e [Alann Perini](https://github.com/AlannKPerini).
+Professores: [Marco André Mendes](https://github.com/marcoandre) e [Alann Perini](https://github.com/AlannKPerini).
 
 Equipe:
-- [Marcelo Henrique Harbs](github.com/MarceloHarbs)
-- [Geovana Sophia Horodeski](github.com/horodeski)
-- [Gregory Valmir Ribeiro](github.com/eugreg)
+- [Marcelo Henrique Harbs](https://github.com/MarceloHarbs)
+- [Geovana Sophia Horodeski](https://github.com/horodeski)
+- [Gregory Valmir Ribeiro](https://github.com/eugreg)
 
 Links do projeto:
 
