@@ -1,39 +1,16 @@
-# p10
+# Projeto Integrador - P10 
+Projeto Integrador do Curso Técnico em Informática para Internet Integrado ao Ensino Médio do IFC - Campus Araquari.
 
-Documentação:
-Mobile:
-BackEnd:
+Professores: [Marco André Mendes](github.com/marcoandre) e [Alann Perini](https://github.com/AlannKPerini).
 
-This template should help get you started developing with Vue 3 in Vite.
+Equipe:
+- [Marcelo Henrique Harbs](github.com/MarceloHarbs)
+- [Geovana Sophia Horodeski](github.com/horodeski)
+- [Gregory Valmir Ribeiro](github.com/eugreg)
 
-## Recommended IDE Setup
+Links do projeto:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+-  [Documentação](https://github.com/MarceloHarbs/P10-Documentcao)
+-  [FrontEnd](https://github.com/horodeski/P10FrontEnd)
+-  [BackEnd](github.com/marcoandre/pi-backend)
+-  [Mobile](https://github.com/horodeski/P10Mobile)   
