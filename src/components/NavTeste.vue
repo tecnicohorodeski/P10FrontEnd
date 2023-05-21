@@ -14,6 +14,7 @@ export default {}
     <div class="nav-principal">
       <div>
         <router-link class="logo" to="/">
+          <!--           <img src="../assets/img/logo.png" /> -->
           <h1>P10</h1>
         </router-link>
       </div>

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
+:root {
+  --cor-primaria: #FF2525
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +12,12 @@
 body {
   height: 100vh;
 }
+.logo img {
+  width: 81%;
+}
 
 .logo {
-  color: #f10000;
+  color: var(--cor-primaria);
   font-weight: bold;
   text-decoration: none;
   font-size: 2em;
@@ -31,12 +36,12 @@ main {
   border-left: 2px;
   border-right: 2px;
   border: #a1a1a1;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 main .alerta {
-  background-color: #f10000;
+  background-color: var(--cor-primaria);
   width: 100%;
   padding: 10px;
   display: flex;
@@ -84,7 +89,7 @@ main .divulgacao img {
 main .produtos .promocao {
   display: flex;
   align-items: center;
-  border: 5px solid #f10000;
+  border: 5px solid var(--cor-primaria);
 }
 main .produtos .promocao img {
   width: 50%;
@@ -100,7 +105,7 @@ main .produtos div .card-produto {
   height: 34vh;
   display: flex;
   margin: 5px 6px;
-  border-radius: 17px;
+  border-radius: 5px;
   padding: 10px;
   background-color: #80808012;
   flex-direction: column;
@@ -112,7 +117,7 @@ main .produtos div .card-produto .preco-antigo {
   font-size: 0.9em;
   color: #a7a7a7;
   text-decoration-line: line-through;
-  text-decoration-color: #f10000;
+  text-decoration-color: var(--cor-primaria);
 }
 
 main .produtos div .card-produto .nome-produto {
@@ -122,7 +127,7 @@ main .produtos div .card-produto .nome-produto {
 }
 
 main .produtos div .card-produto img {
-  border-radius: 17px;
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -203,7 +208,7 @@ nav .nav-principal .pesquisa input {
 }
 
 nav .nav-principal .pesquisa .lupa {
-  background-color: #f10000;
+  background-color: var(--cor-primaria);
   width: 45px;
   height: 45px;
   display: flex;
@@ -242,7 +247,7 @@ nav .nav-principal .user-carrinho .menu-btn i {
 }
 
 nav .navegacao {
-  background-color: #f10000;
+  background-color: var(--cor-primaria);
   width: 100%;
   justify-content: space-around;
   align-items: center;
@@ -362,7 +367,7 @@ footer .rede-sociais {
 }
 footer .github {
   display: flex;
-  background-color: #f10000;
+  background-color: var(--cor-primaria);
   align-items: center;
   justify-content: center;
   height: 8vh;
@@ -546,7 +551,7 @@ footer .github {
   }
 
   nav .nav-principal .user-carrinho ul li h4 {
-    color: #f10000;
+    color: var(--cor-primaria);
     font-size: 1.5em;
   }
 
@@ -557,7 +562,7 @@ footer .github {
   nav .nav-principal .user-carrinho ul li a.active,
   nav .nav-principal .user-carrinho ul li a:hover {
     background: none;
-    color: #f10000;
+    color: var(--cor-primaria);
   }
 
   /*! final nav*/
