@@ -19,3 +19,15 @@ export default {
     <promocaoSection />
   </main>
 </template>
+<style scoped>
+
+main .alerta {
+  background-color: var(--cor-primaria);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+</style>

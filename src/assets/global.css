@@ -40,15 +40,6 @@ main {
   margin: 0 auto;
 }
 
-main .alerta {
-  background-color: var(--cor-primaria);
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  margin-top: 10px;
-  align-items: center;
-  justify-content: space-between;
-}
 main .produtos .produtos-alta {
   display: flex;
   align-items: center;
