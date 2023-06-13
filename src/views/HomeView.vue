@@ -1,9 +1,8 @@
 <script>
-import ProdutosComp from '../components/ProdutosComp.vue'
-import PromocaoSection from '../components/PromocaoSection.vue'
-import ProdutosAlta from '../components/ProdutosAlta.vue'
+import ProdutosComp from '../components/HomeView/ProdutosComp.vue'
+import PromocaoSection from '../components/HomeView/PromocaoSection.vue'
 export default {
-  components: { ProdutosComp, PromocaoSection, ProdutosAlta }
+  components: { ProdutosComp, PromocaoSection, }
 }
 </script>
 
@@ -17,11 +16,6 @@ export default {
     <div class="divulgacao">
       <img src="src/assets/img/celular.png" alt="" />
     </div>
-    <ProdutosComp />
-    <ProdutosAlta />
-    <ProdutosComp />
     <promocaoSection />
-    <ProdutosComp />
-    <ProdutosComp />
   </main>
 </template>

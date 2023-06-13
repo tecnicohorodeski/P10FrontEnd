@@ -1,5 +1,5 @@
 <script>
-import CardProduto from './CardProduto.vue'
+import CardProduto from '../common/CardProduto.vue'
 export default { components: { CardProduto } }
 </script>
 <template>

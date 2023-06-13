@@ -42,3 +42,42 @@ export default {}
     </div>
   </footer>
 </template>
+<style scoped>
+footer {
+  margin-top: 20px;
+}
+footer .informacoes {
+  background-color: #000000;
+  display: flex;
+  height: 28vh;
+  color: white;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+footer .informacoes .links {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+footer .informacoes .links a{
+  color: white;
+  text-decoration: none;
+}
+footer .informacoes .links a:hover {
+  text-decoration: underline;
+}
+footer .rede-sociais {
+  height: 12vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .github {
+  display: flex;
+  background-color: var(--cor-primaria);
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+}
+</style>
