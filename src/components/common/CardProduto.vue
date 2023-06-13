@@ -10,6 +10,7 @@ export default {
 </script>
 <template>
     <div class="card-produto">
+<!--         <button>botão que vai ficar acima dessa merda de imagem tipo o da amazon</button> -->
         <img v-bind:src="CaminhoImagem" />
         <h3 class="nome-produto">{{ NomeProduto }}</h3>
         <div class="preco">
