@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-:root {
-  --cor-primaria: #FF2525
-}
+@import './base.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -91,36 +89,7 @@ main .produtos .promocao .produtos-promocao{
   align-items: center;
   justify-content: space-evenly;
 }
-main .produtos div .card-produto {
-  width: 168px;
-  height: 34vh;
-  display: flex;
-  margin: 5px 6px;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: #80808012;
-  flex-direction: column;
-  justify-content: center;
 
-}
-
-main .produtos div .card-produto .preco-antigo {
-  font-size: 0.9em;
-  color: #a7a7a7;
-  text-decoration-line: line-through;
-  text-decoration-color: var(--cor-primaria);
-}
-
-main .produtos div .card-produto .nome-produto {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-main .produtos div .card-produto img {
-  border-radius: 5px;
-  width: 100%;
-}
 
 /*! início nav */
 

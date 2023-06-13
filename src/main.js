@@ -6,7 +6,7 @@ import router from './router'
 import 'boxicons'
 
 
-import './assets/global.css'
+import './styles/global.css'
 
 const app = createApp(App)
 
