@@ -1,4 +1,5 @@
 <script>
+import { RouterView, RouterLink } from 'vue-router'
 export default {}
 </script>
 <template>
@@ -41,17 +42,32 @@ export default {}
           <li>
             <h4>Em destaque</h4>
           </li>
-          <li><a href="#">Descontos</a></li>
-          <li><a href="#">Mercado</a></li>
-          <li><a href="#">Livraria</a></li>
+          <li>
+            <routerLink to="/">Descontos</routerLink>
+          <li>
+            <a href="#">Mercado</a>
+          </li>
+          <li>
+            <a href="#">Livraria</a>
+          </li>
           <li>
             <h4>Todas as categorias</h4>
           </li>
-          <li><a href="#">Papelaria</a></li>
-          <li><a href="#">Brinquedos</a></li>
-          <li><a href="#">Limpeza</a></li>
-          <li><a href="#">Casa</a></li>
-          <li><a href="#">Roupas</a></li>
+          <li>
+            <a href="#">Papelaria</a>
+          </li>
+          <li>
+            <a href="#">Brinquedos</a>
+          </li>
+          <li>
+            <a href="#">Limpeza</a>
+          </li>
+          <li>
+            <a href="#">Casa</a>
+          </li>
+          <li>
+            <a href="#">Roupas</a>
+          </li>
           <li class="perfil-li">
             <div class="perfil">
               <img src="@/assets/img/eduardo.jpeg" alt="" />
@@ -167,7 +183,6 @@ nav .nav-principal {
   align-items: center;
 }
 
-
 nav .nav-principal .logo h1 {
   font-weight: 900;
 }
@@ -248,7 +263,6 @@ nav .navegacao ul li a {
   display: none;
   position: absolute;
   background-color: white;
-  ;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -286,7 +300,7 @@ nav .navegacao ul li a {
   position: relative;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
 
@@ -305,7 +319,6 @@ input[type="checkbox"] {
   font-size: 40px;
   font-weight: 700;
 }
-
 
 .cesta-responsiva-md {
   display: none;

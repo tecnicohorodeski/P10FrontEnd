@@ -1,9 +1,9 @@
 <script>
-import ProdutosComp from '../components/HomeView/ProdutosComp.vue'
+import ProdutosOfertas from '../components/HomeView/ProdutosOfertas.vue'
 import PromocaoSection from '../components/HomeView/PromocaoSection.vue'
-import ProdutosAlta from '../components/HomeView/ProdutosAlta.vue'
+import ProdutosCategoria from '../components/HomeView/ProdutosCategoria.vue'
 export default {
-  components: { ProdutosComp, PromocaoSection, ProdutosAlta }
+  components: { ProdutosOfertas, PromocaoSection, ProdutosCategoria }
 }
 </script>
 
@@ -13,12 +13,15 @@ export default {
       <p>BAIXE O APP E APROVEITE OFERTAS EXCLUSIVAS</p>
       <box-icon color="#fff" size="md" name="chevron-right"></box-icon>
     </div>
-    <ProdutosComp />
+    <ProdutosOfertas />
     <div class="divulgacao">
       <img src="src/assets/img/celular.png" alt="" />
     </div>
-    <ProdutosAlta />
+    <ProdutosCategoria />
+    <ProdutosOfertas />
     <promocaoSection />
+    <ProdutosOfertas />
+
   </main>
 </template>
 <style scoped>
@@ -28,7 +31,7 @@ main .alerta {
   width: 100%;
   padding: 10px;
   display: flex;
-  margin-top: 10px;
+  margin: 30px 0;
   align-items: center;
   justify-content: space-between;
 }

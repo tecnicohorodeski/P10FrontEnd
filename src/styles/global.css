@@ -13,7 +13,9 @@ body {
 .logo img {
   width: 81%;
 }
-
+section {
+  margin: 30px 0;
+}
 .logo {
   color: var(--cor-primaria);
   font-weight: bold;
@@ -62,14 +64,6 @@ main .alerta p {
 main .produtos .categoria {
   display: flex;
   align-items: center;
-}
-
-main .produtos {
-  margin-top: 10px;
-}
-
-main .divulgacao {
-  margin-top: 10px;
 }
 
 main .divulgacao img {
