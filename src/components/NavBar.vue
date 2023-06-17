@@ -1,5 +1,5 @@
 <script>
-import { RouterView, RouterLink } from 'vue-router'
+import { RouterView, RouterLink } from 'vue-router';
 export default {}
 </script>
 <template>
@@ -43,7 +43,8 @@ export default {}
             <h4>Em destaque</h4>
           </li>
           <li>
-            <routerLink to="/">Descontos</routerLink>
+            <RouterLink to="/">Descontos</RouterLink>
+          </li>
           <li>
             <a href="#">Mercado</a>
           </li>
@@ -54,7 +55,7 @@ export default {}
             <h4>Todas as categorias</h4>
           </li>
           <li>
-            <a href="#">Papelaria</a>
+            <RouterLink to="/brinquedos">Papelaria</RouterLink>
           </li>
           <li>
             <a href="#">Brinquedos</a>
@@ -84,7 +85,7 @@ export default {}
           <box-icon name="down-arrow" size="xs" type="solid" color="#ffffff"></box-icon>
         </button>
         <div class="dropdown-content">
-          <a href="#">Papalaria</a>
+          <RouterLink to="/brinquedos">Papelaria</RouterLink>
           <a href="#">Brinquedos</a>
           <a href="#">Limpeza</a>
           <a href="#">Casa</a>
@@ -99,7 +100,7 @@ export default {}
         <div class="dropdown-responsivo-content">
           <div class="dropdown-responsivo-esquerda">
             <h4>Categorias</h4>
-            <a href="#">Papalaria</a>
+            <RouterLink to="/brinquedos">Papelaria</RouterLink>
             <a href="#">Brinquedos</a>
             <a href="#">Limpeza</a>
             <a href="#">Casa</a>
