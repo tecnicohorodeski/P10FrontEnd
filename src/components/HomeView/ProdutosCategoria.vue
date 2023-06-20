@@ -1,32 +1,28 @@
 <script setup>
-import CardProduto from '../common/CardProduto.vue'
+import CardCategoria from './CardCategoria.vue'
 const produtos = [
   {
     id: 1,
     NomeProduto: 'Quebra Cabeça Numerais E Símbolos Matemática Educativo Madeira',
-    PrecoAntigo: 34.9,
-    PrecoNovo: 6.87,
+
     CaminhoImagem: 'https://m.media-amazon.com/images/I/81U1YA-9EZL._AC_SL1500_.jpg'
   },
   {
     id: 1,
     NomeProduto: 'Quebra Cabeça Numerais E Símbolos Matemática Educativo Madeira',
-    PrecoAntigo: 34.9,
-    PrecoNovo: 6.87,
+
     CaminhoImagem: 'https://m.media-amazon.com/images/I/81U1YA-9EZL._AC_SL1500_.jpg'
   },
   {
     id: 1,
     NomeProduto: 'Quebra Cabeça Numerais E Símbolos Matemática Educativo Madeira',
-    PrecoAntigo: 34.9,
-    PrecoNovo: 6.87,
+
     CaminhoImagem: 'https://m.media-amazon.com/images/I/81U1YA-9EZL._AC_SL1500_.jpg'
   },
   {
     id: 1,
     NomeProduto: 'Quebra Cabeça Numerais E Símbolos Matemática Educativo Madeira',
-    PrecoAntigo: 34.9,
-    PrecoNovo: 6.87,
+
     CaminhoImagem: 'https://m.media-amazon.com/images/I/81U1YA-9EZL._AC_SL1500_.jpg'
   }
 ]
@@ -41,12 +37,10 @@ const produtos = [
       <div class="card-categorias">
         <h3>KITS DE CONSTRUIR E MONTAR</h3>
         <div class="produtos-container">
-          <CardProduto
+          <CardCategoria
             v-for="produto of produtos"
             :key="produto.id"
             :NomeProduto="produto.NomeProduto"
-            :PrecoAntigo="produto.PrecoAntigo"
-            :PrecoNovo="produto.PrecoNovo"
             :CaminhoImagem="produto.CaminhoImagem"
           />
         </div>
@@ -54,12 +48,10 @@ const produtos = [
       <div class="card-categorias">
         <h3>JARDINAGEM E FERRAMENTAS MANUAIS</h3>
         <div class="produtos-container">
-          <CardProduto
+          <CardCategoria
             v-for="produto of produtos"
             :key="produto.id"
             :NomeProduto="produto.NomeProduto"
-            :PrecoAntigo="produto.PrecoAntigo"
-            :PrecoNovo="produto.PrecoNovo"
             :CaminhoImagem="produto.CaminhoImagem"
           />
         </div>
@@ -67,12 +59,10 @@ const produtos = [
       <div class="card-categorias">
         <h3>Casas</h3>
         <div class="produtos-container">
-          <CardProduto
+          <CardCategoria
             v-for="produto of produtos"
             :key="produto.id"
             :NomeProduto="produto.NomeProduto"
-            :PrecoAntigo="produto.PrecoAntigo"
-            :PrecoNovo="produto.PrecoNovo"
             :CaminhoImagem="produto.CaminhoImagem"
           />
         </div>
@@ -80,12 +70,10 @@ const produtos = [
       <div class="card-categorias">
         <h3>ORGANIZADORES</h3>
         <div class="produtos-container">
-          <CardProduto
+          <CardCategoria
             v-for="produto of produtos"
             :key="produto.id"
             :NomeProduto="produto.NomeProduto"
-            :PrecoAntigo="produto.PrecoAntigo"
-            :PrecoNovo="produto.PrecoNovo"
             :CaminhoImagem="produto.CaminhoImagem"
           />
         </div>
@@ -115,6 +103,10 @@ const produtos = [
   background-color: #80808012;
   flex-direction: column;
 }
+.produtos .card-categorias h3 {
+  text-transform: uppercase;
+}
+
 .produtos .produtos-container {
   display: flex;
   flex-wrap: wrap;

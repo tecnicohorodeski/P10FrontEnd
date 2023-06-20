@@ -92,7 +92,6 @@ main .divulgacao img {
 main .produtos .promocao {
   display: flex;
   align-items: center;
-  border: 5px solid var(--cor-primaria);
 }
 
 main .produtos .promocao img {
